@@ -1,0 +1,65 @@
+/* Reset some styles for consistency */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: #ff6600; /* Matches the orange color */
+    padding: 10px 0;
+}
+
+.header-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.brand a {
+    color: #fff;
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.search-bar {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center; /* Center align the search bar */
+}
+
+.search-bar input {
+    width: 60%; /* Set the search bar width to be smaller */
+    max-width: 400px; /* Limit the maximum width */
+    padding: 8px 12px;
+    border: none;
+    border-radius: 20px;
+    outline: none;
+    font-size: 16px;
+    transition: box-shadow 0.3s;
+}
+
+.search-bar input:focus {
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
+}
+
+.account-cart {
+    display: flex;
+    gap: 20px;
+}
+
+.account-cart a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.account-cart a:hover {
+    color: #333;
+}

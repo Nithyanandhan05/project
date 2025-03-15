@@ -1,0 +1,15 @@
+{
+    "name": "nithyanandhan/gadget_store",
+    "description": "An online store for electronic gadgets",
+    "type": "library",
+    "require": {
+        "stripe/stripe-php": "^16.2"
+    },
+    "license": "proprietary",
+    "authors": [
+        {
+            "name": "nithyanandhan",
+            "email": "nithyanandhan@example.com"
+        }
+    ]
+}

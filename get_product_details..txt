@@ -1,0 +1,16 @@
+<?php
+include 'db.php';
+
+if (isset($_GET['id'])) {
+    $productId = $_GET['id'];
+    $stmt = $pdo->prepare("SELECT * FROM products WHERE id = ?");
+    $stmt->execute([$productId]);
+    $product = $stmt->fetch();
+
+    if ($product) {
+        echo json_encode(['success' => true, 'product' => $product]);
+    } else {
+        echo json_encode(['success' => false]);
+    }
+}
+?>

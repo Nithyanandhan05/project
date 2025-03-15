@@ -1,0 +1,364 @@
+/* Global reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f4f7fb;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Header Styles */
+header {
+    background-color: #2b8a3e;
+    color: white;
+    padding: 15px 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+header .logo a {
+    font-size: 1.5em;
+    font-weight: 700;
+    color: white;
+    text-decoration: none;
+}
+
+header nav ul {
+    display: flex;
+    justify-content: flex-end;
+    list-style: none;
+}
+
+header nav ul li {
+    margin-left: 20px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1em;
+    padding: 5px 10px;
+    transition: background-color 0.3s ease;
+}
+
+header nav ul li a:hover {
+    background-color: #3a9d56;
+    border-radius: 5px;
+}
+
+/* Payment Form Redesign */
+.payment-form {
+    width: 100%;
+    max-width: 450px;
+    padding: 30px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    margin-top: 40px;
+}
+
+.payment-form h3 {
+    color: #2b8a3e;
+    font-size: 2em;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    color: #333;
+    font-weight: 500;
+    margin-bottom: 8px;
+    font-size: 0.95em;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 12px;
+    font-size: 1em;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    transition: border-color 0.3s ease;
+}
+
+.form-group input:focus {
+    border-color: #2b8a3e;
+    outline: none;
+    background-color: #ffffff;
+}
+
+button {
+    width: 100%;
+    padding: 15px;
+    background-color: #2b8a3e;
+    border: none;
+    color: white;
+    font-size: 1.2em;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+button:hover {
+    background-color: #238e2e;
+    transform: translateY(-2px);
+}
+
+button:active {
+    transform: translateY(2px);
+}
+
+/* Mobile Responsive Adjustments */
+@media (max-width: 600px) {
+    .payment-form {
+        width: 90%;
+        padding: 20px;
+    }
+
+    .payment-form h3 {
+        font-size: 1.6em;
+    }
+}
+
+/* Content Padding */
+.checkout-container {
+    margin-top: 80px; /* Ensure content doesn't overlap header */
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 1200px;
+    padding: 30px;
+}
+
+h2 {
+    text-align: center;
+    color: #2b8a3e;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+/* General Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+}
+
+h2, h3, h4 {
+    color: #333;
+    font-weight: 500;
+}
+
+.checkout-container {
+    width: 80%;
+    margin: 20px auto;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.checkout-content {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Left side: Order Summary */
+.order-summary {
+    width: 48%;
+}
+
+.order-items-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.order-items-table th, .order-items-table td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+.order-total {
+    font-size: 18px;
+    font-weight: 600;
+    margin-top: 20px;
+}
+
+.delivery-address p {
+    margin: 5px 0;
+}
+
+/* Right side: Payment Form */
+.payment-form {
+    width: 48%;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.card-element {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+button {
+    padding: 15px;
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    width: 100%;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.checkout-container {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 1200px;
+    padding: 30px;
+}
+
+h2 {
+    text-align: center;
+    color: #2b8a3e;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+/* Flex layout for content */
+.checkout-content {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+/* Left side: Order Summary */
+.order-summary {
+    width: 50%;
+}
+
+.order-items-table {
+    width: 100%;
+    margin-bottom: 20px;
+    border-collapse: collapse;
+}
+
+.order-items-table th, .order-items-table td {
+    padding: 12px;
+    text-align: left;
+}
+
+.order-items-table th {
+    background-color: #f0f5f1;
+    color: #2b8a3e;
+}
+
+.order-items-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.delivery-address {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #f0f5f1;
+    border-radius: 5px;
+}
+
+.order-total {
+    font-size: 1.5em;
+    font-weight: bold;
+    text-align: right;
+    padding: 10px;
+    background-color: #f0f5f1;
+    color: #2b8a3e;
+    border-radius: 5px;
+}
+
+/* Right side: Payment Form */
+.payment-form {
+    width: 40%;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.payment-form h3 {
+    margin-bottom: 20px;
+    text-align: center;
+    color: #2b8a3e;
+}
+
+#payment-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card-element {
+    width: 100%;
+    max-width: 400px;
+    padding: 15px;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.card-element:focus {
+    border-color: #2b8a3e;
+}
+
+.btn-continue {
+    margin-top: 20px;
+    padding: 12px 25px;
+    background-color: #2b8a3e;
+    color: white;
+    font-size: 1.2em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.btn-continue:hover {
+    background-color: #238e2e;
+    transform: translateY(-2px);
+}
+
+.btn-continue:active {
+    transform: translateY(2px);
+}
